@@ -43,13 +43,13 @@ for i in range(chances):
 
 print("---------------------------------------")
 
-question_3 = print("3) Black Panther is set in which fictional country?\n","(a) Ethiopia \n (b)  \n (c) Iron Man \n (d) Spiderman")
-answer_3 = "b"
+question_3 = print("3) Black Panther is set in which fictional country?\n","(a) Ethiopia \n (b) London \n (c) Wakanda \n (d) Zimbabwe")
+answer_3 = "c"
 
 for i in range(chances):
     answer = input("Enter your answer :")
     if answer == answer_3:
-        print("Correct!!, very nice\n")
+        print("Correct!!, MY Nigga\n")
         score+=10
         print("your score is: ",score)
         break
