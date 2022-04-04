@@ -2,12 +2,31 @@ def newGame():
     pass
 
 
-def chekAnser():
-    pass
+def chekAnser(answer, guess):
+    if answer == guess:
+        print("Correct!!, MY Nigga")
+        return 10
+    else:
+        print("WORNG!! LOSER")
+        return 0
 
+def displayScore(corrcet_guesses,guuses):
+    print("---------------------------------------")
+    print("RESULTS")
+    print("---------------------------------------")
 
-def displayScore():
-    pass
+    print("Answers :",end=" ")
+    for i in questions:
+        print(questions.get(i),end=" ")
+    print()
+
+    print("you'r guesses:",end=" ")
+    for i in guuses:
+        print(i)
+    print()
+
+    score = int((corrcet_guesses/len(questions))*100)
+    print("your score is : "+str(score))
 
 
 def playAgain():
