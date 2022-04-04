@@ -30,7 +30,12 @@ def displayScore(corrcet_guesses,guuses):
 
 
 def playAgain():
-    pass
+    response  = input("Do you wanna try again?! (y/n)")
+    response = response.lower()
+    if response == "y":
+        return True
+    else:
+        return False
 
 
 questions = {
@@ -58,3 +63,6 @@ options = [['(a) 4 \n (b) 2 \n (c) 8 \n (d) 6'],
            ['(a) 8200 \n (b) GOLANI \n (c) Drone Unit \n (d) All of the above']]
 
 
+while playAgain():
+    newGame()
+print("NIGGA BEYY")
